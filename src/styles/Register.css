@@ -1,0 +1,17 @@
+.register-page {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.register-submit_box {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding-top: 1em;
+}
+
+/* TODO Add color change when hovering */
+.register-submit_box button:hover,
+.register-submit_box input:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+.login-page {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.login-submit_box {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  padding-top: 1em;
+}
+
+/* TODO Add color change when hovering */
+.login-submit_box button:hover,
+.login-submit_box input:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+.navbar {
+  margin: 0px -125px;
+  margin-bottom: 60px;
+  background-color: var(--accent1);
+  padding: 10px 125px;
+}
+
+.navbar h1 {
+  margin: 0px;
+}
+
+.navbar-links a{
+  margin: 0px 15px;
+  padding: 0px;
+}
+
+.nav-brand {
+  font-size: x-large;
+}
+
+.nav-brand:hover {
+  text-decoration: none;
+}

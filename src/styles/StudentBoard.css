@@ -1,0 +1,111 @@
+.student_board-page {
+  background-color: transparent !important;
+  border: none !important;
+
+  justify-content: space-between;
+  align-items: baseline !important;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.student_board-menu {
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.student_board-menu,
+.student_board-board {
+  background-color: #FFFFFF;
+}
+
+.student_board-board {
+  flex-basis: 100%;
+}
+
+.board-task_container {
+  min-width: 150px;
+  padding: 10px;
+}
+
+.board-task_container > p {
+  border-bottom: 1px solid #CCCC;
+  justify-content: stretch;
+}
+
+.board-task {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #CCCC;
+}
+
+.board-task p{
+  font-size: medium;
+}
+
+.board-task_null {
+  font-size: small;
+  text-align: center;
+}
+
+.board-task_course {
+  display: flex;
+  background-color: #CCCC;
+  margin: 0 !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-task_description {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Phone style */
+@media only screen and (min-width: 310px) {
+
+  .board-task_course,
+  .board-task_description {
+    width: 100%;
+  }
+
+  .student_board-menu a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  img { 
+    width: 300px;
+  }
+
+}
+
+/* Computer style */
+@media only screen and (min-width: 980px) {
+
+  body {
+    max-width: 1100px;
+  }
+
+  .page {
+    width: 960px;
+  }
+
+  .student_board-menu a {
+    padding: 0;
+    width: auto;
+  }
+
+  .board-task_course,
+  .board-task_description {
+    width: 42%;
+  }
+}

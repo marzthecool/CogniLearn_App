@@ -1,0 +1,170 @@
+.page-light {
+  display: flex;
+  align-items: center;
+  
+  margin: auto;
+  padding: 60px 60px;
+  margin-bottom: 60px;
+  
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.page-dark {
+  display: flex;
+  align-items: center;
+
+  margin: auto;
+  padding: 60px 60px;
+  
+  background-color: var(--principal-color);
+  color: var(--accent1);
+  border: none;
+}
+
+.course-row {
+  width: 100%;
+}
+
+.course-info-button {
+  background-color: var(--accent1);
+  border-radius: 10px;
+  color: var(--principal-color);
+  font-size: 15px;
+  width: 100px;
+}
+
+.course-info-button:hover {
+  /* text-decoration: underline; */
+  background-color: var(--principal-color);
+  color: var(--accent1);
+}
+
+.breadcrumb-item {
+  color: var(--accent1);
+  font-size: 15px;
+}
+
+.breadcrumb-item:hover {
+  text-decoration: underline; 
+  color: var(--accent1);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+.nav-links p {
+  margin: 0px 10px;
+}
+
+.course-title {
+  margin: 40px 0px 0px 0px;
+}
+
+.course-rating {
+  margin: 20px 0px;
+  display: flex;
+}
+
+.course-rating svg {
+  margin: 8px 2px;
+  color: yellow;
+}
+
+.course-rating p {
+  margin: 0px 10px;
+}
+
+.course-button{
+  background-color: var(--accent1);
+  border-radius: 10px;
+  color: var(--principal-color);
+  padding: 20px 40px;
+  border: solid 1px;
+  font-weight: bolder;
+  margin-top: 100px;
+}
+
+.course-button:hover {
+  /* text-decoration: underline; */
+  background-color: var(--principal-color);
+  color: var(--accent1);
+  border: solid 1px;
+}
+
+.navbar-course-content {
+  background-color: var(--accent1)!important;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.inscription-section p{
+  font-size: small;
+}
+
+.course-views {
+  font-size: smaller;
+  font-weight: bolder;
+  opacity: 0.65;
+}
+
+.course-views svg{
+  margin: 0px 5px;
+}
+
+.course-about h4{
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+
+.course-about h5{
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.course-skill{
+  display: flex;
+}
+
+.course-skill p{
+  padding: 0px 15px;
+  margin-right: 10px;
+  color: var(--accent1);
+  font-size: smaller;
+  background-color: var(--principal-color);
+  border-radius: 100px;
+}
+
+.lesson-description {
+  font-size: medium;
+  opacity: 0.75;
+}
+
+.lesson-tittle {
+  font-weight: bold;
+}
+
+.lesson-duration {
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.lesson-duration svg {
+  margin-top: 8px;
+  margin-right: 10px;
+  height: 16px;
+}
+
+.course-lessons {
+  margin-top: 50px;
+}
+
+.course-divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

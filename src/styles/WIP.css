@@ -1,0 +1,22 @@
+.wip-page {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.wip-submit_box {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  padding-top: 1em;
+}
+
+.wip-icon {
+  width: 120px;
+  height: 120px;
+}
+
+/* TODO Add color change when hovering */
+.wip-submit_box button:hover,
+.wip-submit_box input:hover {
+  text-decoration: underline;
+}

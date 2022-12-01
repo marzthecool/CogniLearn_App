@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*
+  * Colors:
+  * red: FF6B6B
+  * yellow: FFD93D
+  * green: 6BCB77
+  * blue: 4D96FF
+  */
+  --bg-color: #DDDDDD;
+  --anchor-color: #6f7f84;
+  --content-margin: 5px;
+  --yellow: #FFCC00;
+  --principal-color: #02223c;
+  --accent1: #dcdbcc;
+  --accent2: #6f7f84;
+}
+
+/* min-height is equal to 100vh so the page always occupies one page of the device*/
+.App {
+  align-items: center;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  min-width: 360px;
+
+  font: 18px sans-serif;
+  line-height: 1.8em;
+  margin: auto;
+
+  background-color: #02223c;
+  background-repeat: space;
+}
+
+/* Set margins, line heights, etc. for comfortable reading */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: .7em;
+}
+
+p,
+ul,
+li,
+ol,
+figure {
+  /* margin-bottom: 1em; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--anchor-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--principal-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li::marker {
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+/* TODO */
+header {
+  position: relative;
+  height: 120px;
+
+  text-align: center;
+}
+
+/* Navbar settings */
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  /* Problems with login-socials
+  align-items: center;
+  */
+
+  margin: 0 auto;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+/* For centering elements (horizontally and vertically) inside anchor */
+nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--menu-link-color);
+  text-decoration: none;
+}
+
+nav a:visited:hover,
+nav a:visited:active {
+  color: var(--menu-link-color);
+}
+
+button,
+input {
+  background-color: var(--accent1);
+  border: none;
+  color: var(--anchor-color);
+  padding: 6px 6px;
+  border-radius: 5px;
+}
+
+.page {
+  width: 350px;
+  display: flex;
+  align-items: center;
+
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.page div {
+  margin-bottom: 1em;
+}
+
+/*All last-child elements have 0 bottom margin*/
+.page div:last-child,
+.page p:last-child,
+.page li:last-child,
+.page ul:last-child,
+.page ol:last-child {
+  margin-bottom: 0;
+}
+
+/* Phone style */
+@media only screen and (min-width: 310px) {
+
+  .page {
+    width: 350px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+}
+
+/* Computer style */
+@media only screen and (min-width: 980px) {
+
+  body {
+    max-width: 1100px;
+  }
+
+  .page {
+    width: 960px;
+    padding: 60px 30px;
+  }
+}
