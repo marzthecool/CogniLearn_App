@@ -1,17 +1,29 @@
-.register-page {
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.register-submit_box {
+.page-light {
   display: flex;
-  justify-content: space-between;
-  width: 250px;
-  padding-top: 1em;
+  align-items: center;
+  
+  margin: auto;
+  padding: 60px 60px;
+  margin-bottom: 60px;
+  
+  background-color: #FFFFFF;
+  border: none;
 }
 
-/* TODO Add color change when hovering */
-.register-submit_box button:hover,
-.register-submit_box input:hover {
-  text-decoration: underline;
+.register_bubble {
+  width: 30%;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  background-color: var(--accent1);
+  border-radius: 10px;
+  color: var(--principal-color)
+}
+
+.register_bubble:hover {
+  background-color: var(--principal-color);
+  color: var(--accent1);
+}
+
+.register-form {
+  padding: 15px 0px;
 }

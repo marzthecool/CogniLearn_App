@@ -3,15 +3,15 @@
   flex-direction: column;
 }
 
-.login-submit_box {
-  display: flex;
-  justify-content: space-around;
-  width: 250px;
-  padding-top: 1em;
+.login_bubble {
+  margin: 10px 0px;
+  padding: 10px 20px;
+  background-color: var(--accent1);
+  border-radius: 10px;
+  color: var(--principal-color)
 }
 
-/* TODO Add color change when hovering */
-.login-submit_box button:hover,
-.login-submit_box input:hover {
-  text-decoration: underline;
+.login_bubble:hover {
+  background-color: var(--principal-color);
+  color: var(--accent1);
 }

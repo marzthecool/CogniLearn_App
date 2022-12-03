@@ -8,10 +8,12 @@ const Navbar = () => {
   return (
     <>
       <div className='navbar'>
-        <Link className='nav-brand' to='/'>CogniLearn</Link>
+        <Link className='nav-brand' to='/landing'>CogniLearn</Link>
         <div className='navbar-links'>
+          <Link to='/landing'>Inicio</Link>
           <Link to='/course_catalog'>Cursos</Link>
-          <Link to='/'>Iniciar sesion</Link>
+          <Link to='/'>Identifícate</Link>
+    
         </div>
       </div>
     </>

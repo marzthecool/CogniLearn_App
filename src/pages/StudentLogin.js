@@ -9,25 +9,26 @@ const Login = () => {
 
   return (
     <div className='page login-page'>
-      <h1>Student Login</h1>
+      <h1>Iniciar sesión</h1>
 
       <div className="login-login">
         <div>
-          <label htmlFor="username">Username:</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="JohnDoe"/>
+          <label htmlFor="username">Usuario:</label>
+          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de usuario"/>
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
-          <input type="password" className="form-control" placeholder="Password"/>
+          <label htmlFor="password">Contraseña:</label>
+          <input type="password" className="form-control" placeholder="Contraseña"/>
         </div>
       </div>
 
       <div className='login-submit_box'>
-        {/*<input type="submit" value="Access" onClick={ () => { navigate('/student_board') }}/>*/}
-        <input type="submit" value="Access" onClick={ () => { navigate('/student_board') }}/>
+        <button className='login_bubble' type="submit" value="Entrar" onClick={ () => { navigate('/student_board') }}>
+          Ingresar
+        </button>
       </div>
 
-      <p>Don't have an account yet? <a href={'/register'}>Register</a></p>
+      <p>¿No tienes una cuenta aún? <a href={'/register'}>Regístrate</a></p>
     </div>
   );
 };

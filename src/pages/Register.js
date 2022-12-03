@@ -8,41 +8,47 @@ const Register = () => {
     let navigate = useNavigate();
 
     return (
-      <div className='page register-page'>
-        <h1>Register student</h1>
-
-        <div id="register-sign_up">
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" className="form-control" placeholder="John"/>
-          </div>
-          <div>
-            <label htmlFor="name">Surname:</label>
-            <input type="text" className="form-control" placeholder="Doe"/>
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input type="email" className="form-control" placeholder="johndoe@mail.com"/>
-          </div>
-          <div>
-            <label htmlFor="date">Birthdate:</label>
-            <input type="date" id="birthday" className="form-control" name="birthday"/> 
-          </div>
-          <div>
-            <label htmlFor="username">Username:</label>
-            <input type="text" className="form-control" placeholder="johnDoe"/>
-          </div>
-          <div>
-            <label htmlFor="password">Password:</label>
-            <input type="password" className="form-control" placeholder="Password"/>
+      <>
+        <div class='container'>
+          <div class='row page-light'>
+              <h1>Crear cuenta</h1>
+            <div class='row register-form'>
+              <div class='col'>
+                <label for="name" class="form-label">Nombre(s)</label>
+                <input type='text' class='form-control' placeholder='Nombre(s)' aria-label='Nombre(s)'/>
+              </div>
+              <div class='col'>
+                <label for="name" class="form-label">Apellidos:</label>
+                <input type='text' class='form-control' placeholder='Apellidos' aria-label='Apellidos'/>
+              </div>
+            </div>
+            <div class='register-form'>
+              <label htmlFor="email" class="form-label">Correo electrónico:</label>
+              <input type="email" className="form-control" placeholder="correo@mail.com" aria-label="correo@mail.com"/>
+            </div>
+            <div class='register-form'>
+              <label htmlFor="date" class="form-label">Fecha de nacimiento:</label>
+              <input type="date" id="birthday" className="form-control" name="birthday"/> 
+            </div>
+            <div class='register-form'>
+              <label htmlFor="username" class="form-label">Usuario:</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="name" placeholder="Nombre de usuario"/>
+              </div>
+            </div>
+            <div class='register-form'>
+              <label htmlFor="password" class="form-label">Contraseña:</label>
+              <input type="password" className="form-control" placeholder="Contraseña"  aria-label="Contraseña"/>
+            </div>
+            <div class='row d-flex justify-content-center'>
+              <button className='register_bubble' type="submit" value="Entrar" onClick={ () => { navigate('/student_board') }}>
+                Registrarse
+              </button>
+            </div>
           </div>
         </div>
-
-        <div className="register-submit_box">
-          <input type="submit" value="Return to Home" onClick={ () => { navigate('/') }}/>
-          <input type="submit" value="Register" onClick={ () => { navigate('/wip') }}/>
-        </div>
-      </div>
+      </>
     );
 }
 

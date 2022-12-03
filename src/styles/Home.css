@@ -68,3 +68,24 @@
   width: 50px;
   height: 50px;
 }
+
+.home-login_social_icon:hover {
+  color: var(--principal-color);
+}
+
+.landing-searchbar {
+  width: 40%;
+}
+
+.landing-searchbar input {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.landing-searchbar button {
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px 10px;
+}
+
+.landing-intro {
+  width: 50%;
+}
