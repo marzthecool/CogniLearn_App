@@ -20,6 +20,7 @@ import PerfilMaestro from './pages/PerfilMaestro.js';
 import ExercisePage from './pages/ExercisePage';
 import AlgebraExercise from './pages/AlgebraExercise.js';
 import MediaExercise from './pages/MediaExercise.js';
+import Calendario from './pages/Calendario';
 
 import './App.css'
 
@@ -43,6 +44,7 @@ function App() {
           <Route exact path="/exercise_page" element={<ExercisePage/>}/>
           <Route exact path="/algebra_exercise" element={<AlgebraExercise/>}/>
           <Route exact path="/media_exercise" element={<MediaExercise/>}/>
+          <Route exact path="/calendario" element={<Calendario/>}/>
         </Routes>
       </Router>
     </div>
