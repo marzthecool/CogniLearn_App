@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function ExercisePage() {
     const navigate = useNavigate();
     return (
-        <div>
+        <div class='row justify-content-center'>
             <button class="course-button" onClick={ () => { navigate('/algebra_exercise')} }>
                 Algebra
             </button>
