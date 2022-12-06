@@ -7,6 +7,7 @@ const Course = () => {
         id: 1,
         title: "Introduction to Lorem ipsum",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        professor: "John Doe",
         rating: 4.8,
         numReviews: 392,
         numThumbsUp: 97,
@@ -74,9 +75,14 @@ const Course = () => {
                             </div>
                         </div>
 
+                        <div class="course-professor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"> <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/> <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/> </svg>
+                            <p>{course.professor}</p>
+                        </div>
+
                         <div class="inscription-section">
-                            <button class="course-button" onClick={ () => { navigate('/wip')} }>
-                                Inscríbete gratis
+                            <button class="course-button" onClick={ () => { navigate('/exercise_page')} }>
+                                Comenzar curso
                             </button>
                             <p> <b>{course.numStudents} personas</b> ya tomaron este curso</p>
                         </div>

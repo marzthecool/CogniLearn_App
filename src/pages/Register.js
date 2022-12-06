@@ -42,7 +42,7 @@ const Register = () => {
               <input type="password" className="form-control" placeholder="Contraseña"  aria-label="Contraseña"/>
             </div>
             <div class='row d-flex justify-content-center'>
-              <button className='register_bubble' type="submit" value="Entrar" onClick={ () => { navigate('/student_board') }}>
+              <button className='register_bubble' type="submit" value="Entrar" onClick={ () => { navigate('/landing') }}>
                 Registrarse
               </button>
             </div>

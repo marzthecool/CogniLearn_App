@@ -1,0 +1,57 @@
+.problem-box {
+    background-color: var(--accent1);
+    border: none;
+    margin: auto;
+    padding: 60px 60px;
+}
+
+.problem-box-final {
+    background-color: var(--accent1);
+    border: none;
+    margin: auto;
+    padding: 60px 60px;
+    margin-bottom: 60px;
+}
+
+.problem-question {
+    font-size: larger;
+}
+
+.problem-options {
+    margin-top: 30px;
+}
+
+.problem-input {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.problem-input input{
+    margin-right: 15px;
+    width: 30%;
+}
+
+.problem-input p{
+    margin-bottom: 0px;
+    margin-right: 15px;
+}
+
+.exercise-button {
+    background-color: var(--accent1);
+    border-radius: 10px;
+    color: var(--principal-color);
+    padding: 10px 30px;
+    border: solid 1px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.exercise-button:hover {
+    background-color: var(--principal-color);
+    color: var(--accent1);
+}
+
+.problem-instruction {
+
+}

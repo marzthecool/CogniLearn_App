@@ -17,6 +17,9 @@ import CourseCatalog from './pages/CourseCatalog.js'
 import Course from './pages/Course.js'
 import PerfilEstudiante from './pages/PerfilEstudiante.js';
 import PerfilMaestro from './pages/PerfilMaestro.js';
+import ExercisePage from './pages/ExercisePage';
+import AlgebraExercise from './pages/AlgebraExercise.js';
+import MediaExercise from './pages/MediaExercise.js';
 
 import './App.css'
 
@@ -37,7 +40,9 @@ function App() {
           <Route exact path="/perfil-estudiante" element={<PerfilEstudiante/>}/>
           <Route exact path="/perfil-maestro" element={<PerfilMaestro/>}/>
           <Route exact path="/landing" element={<Landing/>}/>
-        
+          <Route exact path="/exercise_page" element={<ExercisePage/>}/>
+          <Route exact path="/algebra_exercise" element={<AlgebraExercise/>}/>
+          <Route exact path="/media_exercise" element={<MediaExercise/>}/>
         </Routes>
       </Router>
     </div>
