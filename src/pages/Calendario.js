@@ -8,13 +8,16 @@ const Calendario = () => {
    
 
     return (
-        <ScheduleComponent>   
-            <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
-            <button  color= "white" onClick={() => { navigate('/student_board') }}>
-             Regresar 
-            </button>
-
-        </ScheduleComponent>
+        <>
+        <div class='page-dark'>
+            <ScheduleComponent>   
+                <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
+                <button  color= "white" onClick={() => { navigate('/student_board') }}>
+                Regresar 
+                </button>
+            </ScheduleComponent>
+        </div>
+        </>
     );
 }
 

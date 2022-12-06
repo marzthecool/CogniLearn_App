@@ -31,8 +31,8 @@ const CourseCatalog = () => {
             <div class="container page-light">
                 <div class="row course-row">
                     <div class="col">
-                        <h1>Course Catalog</h1>
-                        <p>Here are all the courses we offer:</p>
+                        <h1>Catálogo de Cursos</h1>
+                        <p>Los cursos que tenemos:</p>
 
                         <div class="row row-cols-1 row-cols-md-3">
                             {Object.keys(coursesData).map(courseID => 
